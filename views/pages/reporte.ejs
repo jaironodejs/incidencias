@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../includes/head') %>
+    <link rel="stylesheet" href="public/css/home.css" />
+  </head>
+  <body>
+    <%- include('../includes/header') %>
+
+    <main class="content-wrapper mt-5" style="margin-top: 80px !important">
+      <div class="container" style="width: 95% !important">
+        <div class="row justify-content-md-center mb-5">
+          <div class="col-md-12 mt-5">
+            <h2 class="text-center">
+              Enviar formulario HTML a Mysql con Nodejs
+              <hr />
+            </h2>
+          </div>
+
+          <div class="col-md-6 mt-5 text-center cardForm">
+            <table class="table table-bordered table-striped text-center mt-4">
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th scope="col">ID</th>
+                  <th scope="col">USUARIO</th>
+                  <th scope="col">ROL</th>            
+                  <th scope="col">ACCIONES</th>            
+                </tr>
+              </thead>
+              <tbody>
+                <% results.forEach((user)=>{ %>
+                  <tr>  
+                      <td><%= user.id_estudiante %></td>  
+                      <td><%= user.nombre_alumno %></td>
+                      <td><%= user.email_alumno %></td>
+                      <td>
+                        <a href="/edit/<%= user.id_estudiante %>" class="btn btn-outline-info"><i class='bx bxs-edit'></i></a>
+                        <a href="/delete/<%= user.id_estudiante %>" class="btn btn-outline-danger"><i class='bx bxs-trash-alt'></i></a>                   
+                      </td>
+                  </tr>                                   
+               <% }) %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('../includes/scripts') %>
+  </body>
+</html>

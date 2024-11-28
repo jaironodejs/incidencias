@@ -1,0 +1,32 @@
+<header class="header">
+  <a href="./" class="logo">
+    <img src="public/imgs/logo.png" alt="Logo" />
+  </a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li>
+      <a class="menu-item <%= rutaActual === '/' ? 'active' : '' %>" href="/">
+        <i class="bi bi-house"></i>
+        Inicio</a
+      >
+    </li>
+    <li>
+      <a
+        class="menu-item <%= rutaActual === '/form_incidencia' ? 'active' : '' %>"
+        href="/form_incidencia">
+        <i class="bi bi-pencil-square"></i>
+        Registrar Incidencia</a
+      >
+    </li>
+    <li>
+      <a
+        class="menu-item <%= rutaActual === '/rep_incidencia' ? 'active' : '' %>"
+        href="/rep_incidencia">
+        <i class="bi bi-card-list"></i>
+        Reporte de Incidencias</a
+      >
+    </li>
+
+  </ul>
+</header>
