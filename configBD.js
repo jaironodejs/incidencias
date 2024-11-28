@@ -7,10 +7,10 @@ const connection = mysql.createConnection({
 //  database: "nodejs", // MYSQL DB NAME
 //  port: 3306,
 
-  host: "bqkrzit7h3m9jgtf9wz7-mysql.services.clever-cloud.com", // MYSQL HOST NAME
-  user: "ucwzrzhxng8qxmpe", // MYSQL USERNAME
-  password: "H6qRhDFwfCUnNSMeRb5m", // MYSQL PASSWORD
-  database: "bqkrzit7h3m9jgtf9wz7", // MYSQL DB NAME
+  host: "bfathyad9xbsrj1bxsth-mysql.services.clever-cloud.com", // MYSQL HOST NAME
+  user: "udqc0upkadqgwzmi", // MYSQL USERNAME
+  password: "e7M5GvcItRRko8HTco0c", // MYSQL PASSWORD
+  database: "bfathyad9xbsrj1bxsth", // MYSQL DB NAME
   port: 3306,
 
 
